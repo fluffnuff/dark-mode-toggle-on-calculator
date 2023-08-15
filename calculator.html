@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="calculator.css">
+    </head>
+
+    <body>
+        <div class="calculator">
+            <div class="calculation-container">
+                <p class="js-calculator" id="result"></p>
+
+                <div class="dark-mode-toggle">
+                    <button class="js-dark-mode-button dark-mode-button" onclick="toggleDarkMode();">
+                        <img class="light-mode-icon" src="icons/light-mode.png">
+                    </button>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button class="js-button-1 button" onclick="updateCalculation('1');">
+                    1
+                </button>
+
+                <button class="js-button-2 button" onclick="updateCalculation('2');">
+                    2
+                </button>
+
+                <button class="js-button-3 button" onclick="updateCalculation('3');">
+                    3
+                </button>
+
+                <button class="js-button-plus button" onclick="updateCalculation(' + ');">
+                    +
+                </button>
+
+                <button class="js-button-4 button" onclick="updateCalculation('4');">
+                    4
+                </button>
+
+                <button class="js-button-5 button" onclick="updateCalculation('5');">
+                    5
+                </button>
+
+                <button class="js-button-6 button" onclick="updateCalculation('6');">
+                    6
+                </button>
+
+                <button class="js-button-minus button" onclick="updateCalculation(' - ');">
+                    -
+                </button>
+
+                <button class="js-button-7 button" onclick="updateCalculation('7');">
+                    7
+                </button>
+
+                <button class="js-button-8 button" onclick="updateCalculation('8');">
+                    8
+                </button>
+
+                <button class="js-button-9 button" onclick="updateCalculation('9');">
+                    9
+                </button>
+
+                <button class="js-button-times button" onclick="updateCalculation(' * ');">
+                    *
+                </button>
+
+                <button class="js-button-0 button" onclick="updateCalculation('0');">
+                    0
+                </button>
+
+                <button class="js-button-point button" onclick="updateCalculation('.');">
+                    .
+                </button>
+
+                <button class="js-button-equal button" onclick="updateCalculation('');">
+                    =
+                </button>
+
+                <button class="js-button-divide button" onclick="updateCalculation(' / ');">
+                    /
+                </button>
+            </div>
+
+            <button class="js-clear-button clear-button" onclick="clearCalculation();">
+                Clear
+            </button>
+        </div>
+
+        <script src="calculator.js"></script>
+    </body>
+</html>
